@@ -1,0 +1,84 @@
+/* Styl ogólny */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+/* Etykiety */
+form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Pola wejściowe */
+form input,
+form select,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Przycisk */
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Komunikaty błędów */
+form div > div {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Checkboxy */
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form label[for="checkbox"] {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
